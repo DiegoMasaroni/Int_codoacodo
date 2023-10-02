@@ -1,0 +1,39 @@
+.navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+}
+
+.navbar-collapse {
+    color: brown;
+}
+
+main {
+    background-image: url('../Assets/Img/fondo.jpg');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-color: grey;
+    background-blend-mode: soft-light;
+}
+
+.textocentrado {
+    text-align: center;
+}
+
+.ImgTamaño {
+    height: 30px;
+    width: 30px;
+}
+
+body {
+    background-color: lightsteelblue
+}
+
+.letralacañada {
+    font-family: 'Faster One', cursive;
+    font-size: 500%;
+    color: brown;
+}
+
+.row_mia{
+    margin-right: 0;
+}
