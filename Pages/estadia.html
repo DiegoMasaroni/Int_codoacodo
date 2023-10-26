@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="../CSS/Misestilos.css">
+</head>
+
+<body>
+
+    <header class="position-sticky position-fixed fixed-top top-0 z-3">
+        <nav class="navbar navbar-expand-lg bg-secondary">
+            <div class="container ">
+                <a href="../index.html">
+                    <img src="../Assets/Img/motocross.png" width="40" height="40" alt="Icono de Motocross">
+                </a>
+                <a class="navbar-brand" href="../index.html"> Circuito La Cañada</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a href="https://www.facebook.com/groups/140119366109551" target="_blank">
+                            <img src="../Assets/Img/fb.png" width="40" height="40" alt="Facebook">
+                        </a>
+                        <a class="nav-link active" aria-current="page" href="../#imagenes">Imagenes</a>
+                        <a class="nav-link active" aria-current="page" href="../#servicios">Servicios</a>
+                        <a class="nav-link active" aria-current="page" href="../#instructores">Instructores</a>
+                        <a class="nav-link active" aria-current="page" href="../#escuela">Escuela</a>
+                        <a class="nav-link active" aria-current="page" href="../#auspiciantes">Auspiciantes</a>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="container" id="feature-3"  style="color:#198754">
+            <div class="row g-4 py-3 row-cols-1 row-cols-lg-3" id="cartas">
+                <div class="col">
+                    <div class="card border-success rounded-5 mb-3" style="width: 20rem; text-align: center;">
+                        <div class="card-body">
+                            <h5 class="card-title">Lunes a Jueves</h5>
+                            <h6 class="card-title">Tiene un descuento</h6>
+                            <h5 class="card-title">50%</h5>
+                            <p class="card-text">*Documentación del vehiculo requerida</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-success rounded-5 mb-3" style="width: 20rem;text-align: center;">
+                        <div class="card-body">
+                            <h5 class="card-title">Viernes, Sábados o Domingos</h5>
+                            <h6 class="card-title">Tarifa completa</h6>
+                            <h5 class="card-title"></h5>
+                            <p class="card-text">*Documentación del vehiculo requerida</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card border-success rounded-5 mb-3" style="width: 20rem;text-align: center;">
+                        <div class="card-body">
+                            <h5 class="card-title">Viernes y Sábado o </h5>
+                            <h5 class="card-title">Sábado y Domingo </h5>
+                            <h6 class="card-title">Tiene un descuento</h6>
+                            <h5 class="card-title">20%</h5>
+                            <p class="card-text">*Documentación del vehiculo requerida</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- inicio del formulario -->
+        <section>
+            <h6 class="text-center">Realice su compra anticipada</h6>
+            <h3 class="text-center">VALOR DE LA JORNADA $3500</h3>
+            <h6 class="text-center">Recibira su cupón de pago en el mail especificado</h6>
+            <form class="container-fluid" style="width: 63%" action="">
+                <div class="row mb-2" >
+                    <div class="col">
+                        <input id="nombre" type="text" class="form-control"  placeholder="Nombre"
+                            aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <input id="apellido" type="text" class="form-control" placeholder="Apellido"
+                            aria-label="Last name">
+                    </div>
+                </div>
+                <div class="mb-2">
+                    <input id="mail" type="email" class="form-control" placeholder="nombre@dominio.com">
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="cantidad">Cantidad de entradas</label>
+                        <input id="cantidad" type="number" class="form-control" placeholder="Máximo 9">
+                    </div>
+                    <div class="col">
+                        <label for="estadia">Tipo de estadía</label>
+                        <select id="estadia" class="form-select" aria-label="Default select example">
+                            <option selected="">--Seleccione--</option>
+                            <option value="0">Lunes a Jueves (50%)</option>
+                            <option value="1">Viernes, Sábados o Domingo (100%)</option>
+                            <option value="2">Vie y Sáb o Sáb y Dom (20%)</option>
+                        </select>
+                    </div>
+                </div>
+                <br>
+                <div class="alert alert-primary mb-0" role="alert">
+                    Total a pagar: <span id="total" class="text-danger"></span>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="d-grid col-6 mx-auto;">
+                        <button class="btn btn-success" type="reset" id="btnBorrar">Borrar</button>
+                    </div>
+                    <div class="d-grid col-6 mx-auto">
+                        <button class="btn btn-success" type="button" id="btnResumen">Emitir cupón de pago</button>
+                        <!-- <button class="btn btn-success" type="submit" id="btnResumen">Resumen</button> -->
+                    </div>
+                </div>
+                <br>
+                <br>
+
+            </form>
+        </section>
+
+
+        <br>
+
+    </main>
+    <footer class="bg-secondary">
+        <nav class="navbar  navbar-expand-lg fixed-bottom bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Preguntas frecuentes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contáctanos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Términos y Condiciones</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- JavaScript Libraries -->
+    <!--<script src="./JS/script.js"></script>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous">
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
+        integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+        </script>
+
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
