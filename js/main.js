@@ -2,6 +2,7 @@ function valorEntrada() {
 
     var capCantidad = document.getElementById('cantidad').value;
     var capCategoria = document.getElementById('estadia').value;
+    
     const TICKET = 3500;
     var resumenTotal = 0;
 
