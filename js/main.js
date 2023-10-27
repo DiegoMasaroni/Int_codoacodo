@@ -87,7 +87,6 @@ function controlForm() {
     valorEntrada();
 }
 
-
 const BTNCLICK = document.getElementById('btnResumen');
 
 BTNCLICK.addEventListener('click', controlForm);
