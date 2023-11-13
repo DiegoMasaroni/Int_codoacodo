@@ -2,7 +2,7 @@ function valorEntrada() {
 
     var capCantidad = document.getElementById('cantidad').value;
     var capCategoria = document.getElementById('estadia').value;
-    
+
     const TICKET = 3500;
     var resumenTotal = 0;
 
@@ -91,3 +91,4 @@ function controlForm() {
 const BTNCLICK = document.getElementById('btnResumen');
 
 BTNCLICK.addEventListener('click', controlForm);
+
